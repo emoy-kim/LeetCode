@@ -72,4 +72,5 @@ int main()
    const double x = 10.0;
    const int n = 100;
    cout << myPow( x, n ) << endl;
+   return 0;
 }
