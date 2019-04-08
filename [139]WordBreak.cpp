@@ -56,14 +56,6 @@
 
 using namespace std;
 
-bool isInDictionary(const vector<string>& wordDict, const string& s)
-{
-   for (const auto& word : wordDict) {
-      if (word == s) return true;
-   }
-   return false;
-}
-
 bool wordBreak(string s, vector<string>& wordDict) 
 {
    if (s.empty()) return true;
