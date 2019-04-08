@@ -119,7 +119,11 @@ vector<string> findList(const string& s, vector<string>& wordDict, unordered_map
       if (find( wordDict.begin(), wordDict.end(), sub ) != wordDict.end()) {
          vector<string> prev = findList( s.substr( 0, i ), wordDict, mapper );
          for (const auto& l : prev) {
+<<<<<<< HEAD
             list.push_back( l + " " + sub );
+=======
+            list.push_back( l.append( " " + sub ) );
+>>>>>>> 251d841b1b9138cec531f5dfa4719c5665907861
          }
       }
    }
@@ -144,5 +148,10 @@ int main()
    for (const auto& sentence : list) {
       cout << sentence << "," << endl;
    }
+<<<<<<< HEAD
+=======
+   // "pineapplepenapple"\n["apple","pen","applepen","pine","pineapple"]
+   // "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"\n["a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"]
+>>>>>>> 251d841b1b9138cec531f5dfa4719c5665907861
    return 0;
 }
