@@ -144,13 +144,5 @@ int main()
    for (const auto& sentence : list) {
       cout << sentence << "," << endl;
    }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-   // "pineapplepenapple"\n["apple","pen","applepen","pine","pineapple"]
-   // "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"\n["a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"]
->>>>>>> 251d841b1b9138cec531f5dfa4719c5665907861
->>>>>>> 10332eeded7a0647838e638d7072ddfd531b8ec0
    return 0;
 }
