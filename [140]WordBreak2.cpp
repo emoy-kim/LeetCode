@@ -119,15 +119,7 @@ vector<string> findList(const string& s, vector<string>& wordDict, unordered_map
       if (find( wordDict.begin(), wordDict.end(), sub ) != wordDict.end()) {
          vector<string> prev = findList( s.substr( 0, i ), wordDict, mapper );
          for (const auto& l : prev) {
-<<<<<<< HEAD
             list.push_back( l + " " + sub );
-=======
-<<<<<<< HEAD
-            list.push_back( l + " " + sub );
-=======
-            list.push_back( l.append( " " + sub ) );
->>>>>>> 251d841b1b9138cec531f5dfa4719c5665907861
->>>>>>> 10332eeded7a0647838e638d7072ddfd531b8ec0
          }
       }
    }
