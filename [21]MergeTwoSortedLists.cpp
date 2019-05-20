@@ -58,11 +58,7 @@ ListNode* mergeTwoLists(ListNode* l1, ListNode* l2)
 
    ListNode* result = new ListNode(list1[0]);
    ListNode* head = result;
-<<<<<<< HEAD
    for (size_t i = 1; i < list1.size(); ++i) {
-=======
-   for (uint i = 1; i < list1.size(); ++i) {
->>>>>>> ec63630dcc27e66370f52497e716152759676e8d
       head->next = new ListNode(list1[i]);
       head = head->next;
    }
